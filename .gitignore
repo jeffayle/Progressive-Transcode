@@ -1,5 +1,6 @@
 *.swp
 *.flac
+*.mp3
 *.raw
 storage/*
 !storage/.gitignore
