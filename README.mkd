@@ -1,0 +1,16 @@
+# Progressive Transcoding
+The program will progressively transcode an audio file, the first second
+will remain lossless, the second will have been transcoded to mp3 V2, the
+next second will have been transcoded to mp3 V2, decoded, then transcoded
+again as mp3 V2.
+
+## Dependencies
+You will need `ruby`, `lame` and `flac` to run the script.
+
+## Usage
+Put the flac you want to run this on in the same directory with the name
+`input.flac`, when it is done, the transcoded audio will be in
+`output.flac`.
+
+    chmod +x progtranscode.rb
+    ./progtranscode
