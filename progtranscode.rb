@@ -25,3 +25,7 @@ while File.size('storage/output.raw') > 0
     `lame --decode  --bitwidth 16 --signed --little-endian \
     storage/output.mp3 storage/output.raw`
 end
+
+#Flac it
+`flac --force-raw-format --endian=little --sign=signed --channels=2 \
+--bps=16 --sample-rate=44100 -o output.flac storage/output.raw`
