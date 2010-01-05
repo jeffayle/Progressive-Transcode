@@ -14,3 +14,12 @@ Put the flac you want to run this on in the same directory with the name
 
     chmod +x progtranscode.rb
     ./progtranscode
+
+## Process Time
+Running the script will take a long time, since it needs to encode and
+decode the song for every second in it. Each encode/decode cycle will take
+less time as it progresses though, since it will have less to process. (it
+will only encode/decode what is left, not the whole file each time).
+
+To get an idea of how much longer it will take to run, look at the number
+of frames in the encoder or decoder output.
