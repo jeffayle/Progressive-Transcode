@@ -1,4 +1,5 @@
 #!/usr/bin/ruby
+require 'ftools'
 
 #Initial decode to raw
 `flac -d -o storage/output.raw --force-raw-format --endian=little \
