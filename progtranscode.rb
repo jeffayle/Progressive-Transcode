@@ -29,3 +29,9 @@ end
 #Flac it
 `flac --force-raw-format --endian=little --sign=signed --channels=2 \
 --bps=16 --sample-rate=44100 -o output.flac storage/output.raw`
+
+#Get rid of extra/uneeded files
+File.safe_unlink('storage/output.raw', 'storage/final.raw',
+        'storage/output.mp3')
+
+puts 'All done encoding.'
